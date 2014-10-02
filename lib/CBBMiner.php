@@ -1,12 +1,11 @@
 <?php
 
-
 	namespace CBBMiner;
 	require "Invoker.php";
 
 	class CBBMiner {
 		
-		private $help = "Usage: \n-h this help\n--getValues [dd-MM-yy] [dd-MM-yy] [CodeSeriesValue1] [CodeSeriesValue2] ...";
+		private $help = "Usage: \n-h this help\n--getValues [dd/mm/yyyy] [dd/mmmm/yyyy] [CodeSeriesValue1] [CodeSeriesValue2] ...";
 		private $invoker;
 
 		public function __construct($args) {
@@ -25,5 +24,3 @@
 			}
 		}
 	}
-
-?>

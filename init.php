@@ -4,5 +4,3 @@
 
 	require('lib/CBBMiner.php');
 	$cbb = new CBBMiner($argv);
-
-?>

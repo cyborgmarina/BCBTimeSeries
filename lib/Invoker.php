@@ -17,5 +17,3 @@
 			$soap->doGetValores();
 		}
 	}
-
-?>

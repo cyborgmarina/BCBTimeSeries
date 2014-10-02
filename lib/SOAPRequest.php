@@ -34,7 +34,7 @@
 			$response = curl_exec($ch);
 			$response = str_replace(array("&lt;", "&gt;"), array("<", ">"), $response);
 			date_default_timezone_set('UTC');
-			$file = "series" . date("dmy-h:i") . ".xml";
+			$file = "series" . date("dmy-h-i") . ".xml";
 			\file_put_contents($file, $response);
 			curl_close($ch);
 
@@ -43,5 +43,3 @@
 		}
 
 	}
-
-?>
