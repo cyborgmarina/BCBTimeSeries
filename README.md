@@ -1,7 +1,7 @@
 CBBMiner
 ========
 
-A simple command-line tool to fetch data from Central Bank of Brazil.
+A simple command-line tool that gets data from Central Bank of Brazil.
 It spits out some xml as a result. 
 
 ========
