@@ -1,17 +1,22 @@
 CBBMiner
 ========
 
-A simple PHP CLI tool for consuming data from Central Bank of Brazil's API.
+A simple command-line tool to fetch data from Central Bank of Brazil.
 It spits out some xml as a result. 
+
+========
+Requirements:
+
+  PHP5+
 
 ========
 Usage:
  
   php init.php -args
   
-  -h help
+  -h this help
 
-  --getValues [dd/mm/yyyy] [dd/mm/yyyy] [CodeSeriesValue1] [CodeSeriesValue2] .. 
+  --getValues [dd/mm/yyyy] [dd/mm/yyyy] [seriesCode] [seriesCode] .. 
 
 
 ========
