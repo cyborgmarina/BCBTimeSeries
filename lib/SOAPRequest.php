@@ -33,10 +33,13 @@
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $this->header);
 			$response = curl_exec($ch);
 			$response = str_replace(array("&lt;", "&gt;"), array("<", ">"), $response);
+            $response = str_replace(array('<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><getValoresSeriesXMLResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><getValoresSeriesXMLReturn xsi:type="soapenc:string" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">', '</getValoresSeriesXMLReturn></getValoresSeriesXMLResponse></soapenv:Body></soapenv:Envelope>'),'', $response);
 			date_default_timezone_set('UTC');
 			$file = "series" . date("dmy-h-i") . ".xml";
 			\file_put_contents($file, $response);
 			curl_close($ch);
+            echo $file . " created\n";
+            
 
 
 
