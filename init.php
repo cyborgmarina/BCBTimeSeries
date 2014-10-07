@@ -1,6 +1,6 @@
 <?php
 
-	namespace CBBMiner;
+	require_once( dirname( __FILE__ ) . '/lib/CBBMiner.php' );
 
-	require('lib/CBBMiner.php');
-	$cbb = new CBBMiner($argv);
+	$obj = new CBBMiner\CBBMiner();
+	$obj->linhaComando( $argc, $argv );
