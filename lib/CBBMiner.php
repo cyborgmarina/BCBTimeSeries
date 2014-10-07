@@ -94,7 +94,7 @@
 					'-gv'                => "<codigoSerie> <data>",
 					'--getValorEspecial' => "<codigoSerie> <dataInicial> <dataFinal>",
 					'-gve'               => "<codigoSerie> <dataInicial> <dataFinal>",
-					'--getValoresSeries' => "<codigoSerie> <dataInicial> <dataFinal>"
+					'--getValoresSeries' => "<codigoSerie> <dataInicial> <dataFinal>",
 					'-gvs'               => "<codigoSerie> <dataInicial> <dataFinal>"
 				);
 				switch( $args[1] ) {
