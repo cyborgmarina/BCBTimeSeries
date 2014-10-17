@@ -1,8 +1,6 @@
 CBBMiner
 ========
-
 A simple command-line tool that gets data from Central Bank of Brazil.
-It spits out some xml as a result. 
 
 ========
 Requirements:
@@ -14,10 +12,25 @@ Usage:
  
   php init.php -args
   
+  --help this help
   -h this help
 
-  --getValues [dd/mm/yyyy] [dd/mm/yyyy] [seriesCode] [seriesCode] .. 
+  --getUltimoValor   [seriesCode]
+  -guv               [seriesCode]
+  
+  --getValor         [seriesCode] [date]
+  -gv                [seriesCode] [date]
+  
+  --getValorEspecial [seriesCode] [startDate] [endDate]
+  -gve               [seriesCode] [startDate] [endDate]
+  
+  --getValoresSeries [seriesCode] [startDate] [endDate]
+  -gvs               [seriesCode] [startDate] [endDate]
 
+========
+Date format: 
+  
+  dd/mm/yyyy
 
 ========
 No License, do what you want 'cause a pirate is free!
