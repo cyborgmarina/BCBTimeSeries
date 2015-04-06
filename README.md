@@ -1,36 +1,32 @@
-CBBMiner
+Maua
 ========
-A simple command-line tool that gets data from Central Bank of Brazil.
+Uma pequena ferramenta de acesso aos dados do Banco Central do Brasil, usando sua API pública e gratuita.
 
 ========
-Requirements:
+Requisitos mínimos:
 
   PHP5+
 
 ========
-Usage:
+Como utilizar (linha de comando):
  
-  php init.php -args
+  php init.php -argumentos
   
-  --help this help
-  -h this help
-
-  --getUltimoValor   [seriesCode]
-  -guv               [seriesCode]
+  --help / -h Mostra este guia.
   
-  --getValor         [seriesCode] [date]
-  -gv                [seriesCode] [date]
+  --getUltimoValor   [Código da Série]
+  -guv               [Código da Série]
   
-  --getValorEspecial [seriesCode] [startDate] [endDate]
-  -gve               [seriesCode] [startDate] [endDate]
+  --getValor         [Código da Série] Data]
+  -gv                [Código da Série] Data]
   
-  --getValoresSeries [seriesCode] [startDate] [endDate]
-  -gvs               [seriesCode] [startDate] [endDate]
-
-========
-Date format: 
+  --getValorEspecial [Código da Série] [DataInicio] [DataFinal]
+  -gve               [Código da Série] [DataInicio] [DataFinal]
   
-  dd/mm/yyyy
+  --getValoresSeries [Código da Série] [sDataInicio] [DataFinal]
+  -gvs               [Código da Série] [DataInicio] [DataFinal]
 
 ========
-No License, do what you want 'cause a pirate is free!
+Formato da data:
+
+  dd/mm/aaaa
