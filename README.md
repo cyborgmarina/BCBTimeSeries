@@ -1,4 +1,4 @@
-Maua
+BCBMiner
 ========
 Uma pequena ferramenta de acesso aos dados do Banco Central do Brasil.
 
