@@ -146,7 +146,7 @@
 		}
 
 		public function linhaComando( $args ) {
-			$msgErro     = "Erro: argumento inválido. \nTente:\n php init.php -h\n php init.php -h <param>";
+			$msgErro     = "Erro: argumento inválido. \nTente:\n php init.php --ajuda";
 			$nomeArquivo = '';
 			if( count( $args ) <= 1 ) {
 				echo $msgErro;
