@@ -1,4 +1,4 @@
-BCBMiner-cli
+BCBTimeSeries
 ========
 
 [Official Guide - Portuguese](https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/sgsAjuda.jsp)
