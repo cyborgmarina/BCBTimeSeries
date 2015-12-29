@@ -26,8 +26,8 @@
 		private static $HELP = array(
 			'--getUltimoValor'   => "<seriesCode>",
 			'-guv'               => "<seriesCode>",
-			'--getValor'         => "<seriesCode> <data>",
-			'-gv'                => "<seriesCode> <data>",
+			'--getValor'         => "<seriesCode> <date>",
+			'-gv'                => "<seriesCode> <date>",
 			'--getValorEspecial' => "<seriesCode> <startDate> <endDate>",
 			'-gve'               => "<seriesCode> <startDate> <endDate>",
 			'--getValoresSeries' => "<seriesCode> <startDate> <endDate>",
@@ -84,17 +84,17 @@
 			return $this->call( $method, $seriesCode );
 		}
 
-		public function getValor( $seriesCode, $data ) {
-			return $this->call( 'getValor', $seriesCode, $data ); 
+		public function getValor( $seriesCode, $date ) {
+			return $this->call( 'getValor', $seriesCode, $date ); 
 		}
 
-		public function getValorEspecial( $seriesCode, $dataInicial, $dataFinal ) {
-			return $this->call( 'getValorEspecial',  $codeSeria, $dataInicial, $dataFinal );
+		public function getValorEspecial( $seriesCode, $startDate, $endDate ) {
+			return $this->call( 'getValorEspecial',  $seriesCode, $startDate, $endDate );
 		}
 
-		public function getValoresSeries( $seriesCode, $dataInicial, $dataFinal, $xml = false ) {
+		public function getValoresSeries( $seriesCode, $startDate, $endDate, $xml = false ) {
 			$method = $xml ? 'getValoresSeriesXML' : 'getValoresSeriesVO';
-			return $this->call( $method, $seriesCode, $dataInicial, $dataFinal );
+			return $this->call( $method, $seriesCode, $startDate, $endDate );
 		}
 
 		public function hasError() {
