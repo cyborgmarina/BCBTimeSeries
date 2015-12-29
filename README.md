@@ -1,35 +1,40 @@
-Disclaimer
-========
-_This was originally designed to meet the requirements of a request made by some brazilian friends that worked in the finance industry. It is a simple wrapper for Brazilian Central Bank's API._ 
-
 BCBMiner-cli
 ========
-Uma pequena ferramenta de acesso aos dados do Banco Central do Brasil via linha de comando.
+
+[Official Guide - Portuguese](https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/sgsAjuda.jsp)
+
+A simple wrapper for the Brazilian Central Bank's Time Series Management System.
 
 ========
-Requisitos mínimos:
+Minimum Requirements:
 
 *	[PHP 5+](http://php.net/downloads.php)
 
+[For Windows users](https://stackoverflow.com/questions/7307548/how-to-access-php-with-the-command-line-on-windows)
+
 ========
-*	A utilização é feita via linha de comando:
+*	Usage:
 ```
-  php init.php -argumentos
+  php init.php -arguments
  ```
  ``` 
- --ajuda / -a Mostra este guia. 
+ --help / -h Show this guide. 
   
- --getUltimoValor   [Código da Série]
-  -guv               [Código da Série]
-  
-  --getValor         [Código da Série] [Data]
-  -gv                [Código da Série] [Data]
-  
-  --getValorEspecial [Código da Série] [DataInicio] [DataFinal]
-  -gve               [Código da Série] [DataInicio] [DataFinal]
-  
-  --getValoresSeries [Código da Série] [DataInicio] [DataFinal]
-  -gvs               [Código da Série] [DataInicio] [DataFinal]
+ --getUltimoValor    [Series Code]  (e.g.: 8080)
+  -guv               [Series Code]
+  //gets last value from specific series
+
+  --getValor         [Series Code] [Data]
+  -gv                [Series Code] [Data]
+  //gets value from series in a specific date
+
+  --getValorEspecial [Series Code] [startDate] [endDate]
+  -gve               [Series Code] [startDate] [endDate]
+  //gets value from special series
+
+  --getValoresSeries [Series Code] [startDate] [endDate]
+  -gvs               [Series Code] [startDate] [endDate]
+  //gets values from series in certain periods of time
   ```
 
-* Formato da data: dd/mm/aaaa
+* Date format: dd/mm/yyyy

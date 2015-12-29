@@ -1,8 +1,8 @@
 <?php
 
-	require_once( dirname( __FILE__ ) . '/lib/CBBMiner.php' );
+	require_once( dirname( __FILE__ ) . '/lib/BCBTimeSeries.php' );
 
-	$obj = new CBBMiner\CBBMiner();
+	$obj = new BCBTimeSeries\BCBTimeSeries();
 
-	$obj->setSalvarAutomaticamente( false )
-		->linhaComando( $argv );
+	$obj->setAutoSave( false )
+		->commandLine( $argv );
